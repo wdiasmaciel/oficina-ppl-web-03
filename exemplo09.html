@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,32 +24,37 @@
         }
     </style>
 </head>
+
 <body>
-    <script>
-        /*
-          Estrutura sequencial
-          Comandos de saída
-          Comando de entrada
-          Variável
-          Template string
-        */
 
-       var num1, num2, soma, subtracao, multiplicacao, divisao, resto;
-     
-       num1 = parseInt(prompt("Informe o primeiro número:"));
-       num2 = parseInt(prompt("Informe o segundo número:"));
-       
-       soma = num1 + num2;
-       subtracao = num1 - num2;
-       multiplicacao = num1 * num2;
-       divisao = num1 / num2;
-       resto = num1 % num2;
+    <div class="container">
+        <script>
+            /*
+              Estrutura sequencial
+              Comandos de saída
+              Comando de entrada
+              Variável
+              Template string
+            */
 
-       document.write(`<div class="bloco">${num1} - ${num2} = ${subtracao} </div><br>`);
-       document.write(`<div class="bloco">${num1} + ${num2} = ${soma} </div><br>`);
-       document.write(`<div class="bloco">${num1} * ${num2} = ${multiplicacao} </div><br>`);
-       document.write(`<div class="bloco">${num1} / ${num2} = ${divisao} </div><br>`);
-       document.write(`<div class="bloco">${num1} % ${num2} = ${resto} </div><br>`);
-    </script>
+            var num1, num2, soma, subtracao, multiplicacao, divisao, resto;
+
+            num1 = parseInt(prompt("Informe o primeiro número:"));
+            num2 = parseInt(prompt("Informe o segundo número:"));
+
+            soma = num1 + num2;
+            subtracao = num1 - num2;
+            multiplicacao = num1 * num2;
+            divisao = num1 / num2;
+            resto = num1 % num2;
+
+            document.write(`<div class="bloco">${num1} - ${num2} = ${subtracao} </div>`);
+            document.write(`<div class="bloco">${num1} + ${num2} = ${soma} </div>`);
+            document.write(`<div class="bloco">${num1} * ${num2} = ${multiplicacao} </div>`);
+            document.write(`<div class="bloco">${num1} / ${num2} = ${divisao} </div>`);
+            document.write(`<div class="bloco">${num1} % ${num2} = ${resto} </div>`);
+        </script>
+    </div> <!-- Fechamento do container. -->
 </body>
+
 </html>
