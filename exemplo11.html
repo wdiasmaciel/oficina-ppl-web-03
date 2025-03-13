@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 09</title>
+
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #c9c7c7;
+            box-shadow: .5rem .5rem .3rem .01rem #c9c7c7;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .bloco {
+            color: white;
+            font-weight: bold;
+            width: 9rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            margin: 1rem;
+        }
+
+        .par {
+            background-color: blue;
+        }
+
+        .impar {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <script>
+            /*
+              Estrutura condicional
+              Comandos de saída
+              Comando de entrada
+              Variável
+              Template string
+            */
+
+            var num;
+
+            num = parseInt(prompt("Informe um número:"));
+
+            if (num % 2 == 0)
+                document.write(`<div class="bloco par">O número ${num} é par!</div>`);
+            else
+                document.write(`<div class="bloco impar">O número ${num} é ímpar!</div>`);
+
+        </script>
+    </div> <!-- Fechamento do container. -->
+</body>
+
+</html>
