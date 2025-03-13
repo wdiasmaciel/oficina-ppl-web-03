@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 09</title>
+
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #c9c7c7;
+            box-shadow: .5rem .5rem .3rem .01rem #c9c7c7;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .bloco {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 9rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            margin: 1rem;
+        }
+
+        .pode-votar {
+            background-color: green;
+        }
+
+        .nao-pode-votar {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <script>
+            /*
+              Estrutura condicional
+              Comandos de saída
+              Comando de entrada
+              Variável
+              Template string
+            */
+
+            var idade;
+
+            idade = parseInt(prompt("Informe a idade:"));
+
+            if (idade < 16) {
+                document.write(`<div class="bloco">A pessoa é menor de idade!</div>`);
+                document.write(`<div class="bloco nao-pode-votar">A pessoa não pode votar!</div>`);
+            }
+            else{
+                document.write(`<div class="bloco">A pessoa é maior de idade!</div>`);
+                document.write(`<div class="bloco pode-votar">A pessoa pode votar!</div>`);
+            }
+        </script>
+    </div> <!-- Fechamento do container. -->
+</body>
+
+</html>
